@@ -1,4 +1,4 @@
-#include "utils.h"
+#include "../include/utils.h"
 
 void check_max(int temp_value, int calories[])
 {
