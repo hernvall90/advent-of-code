@@ -39,9 +39,10 @@ void file_parser(const char *filename)
             tmp = 0;
         }
     }
+    fclose(fp);
 
     print_func(calories);
-
+    
 }
 
 void print_func(int calories[])

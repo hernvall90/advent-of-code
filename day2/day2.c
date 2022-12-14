@@ -89,6 +89,7 @@ int main(void)
         // Part 2
         result += get_result(return_choice(buffer[0]), return_choice(buffer[2]), part_two);
     }
+    fclose(fp);
 
     printf("Part 1: total=%d\n", result);
     //printf("Part 2: total=%d\n", result);

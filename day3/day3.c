@@ -65,6 +65,8 @@ int main(void)
     while (fgets(buffer, BUFFER_SIZE, fp) != NULL) {
         result += get_result(buffer);
     }
+
+    fclose(fp);
     printf("result=%d\n", result);
 
     return 0;
