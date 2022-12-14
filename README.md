@@ -5,3 +5,4 @@ My solutions to AoC 2022 puzzles in `C`.
 | --- | ---- | ---- |
 | [1](https://adventofcode.com/2022/day/1) | ⭐️ | ⭐️ |
 | [2](https://adventofcode.com/2022/day/2) | ⭐️ | ⭐️ |
+| [3](https://adventofcode.com/2022/day/3) | ⭐️ |   |
