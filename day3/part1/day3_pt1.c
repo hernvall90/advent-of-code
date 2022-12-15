@@ -1,18 +1,13 @@
-#include "../include/utils.h"
+#include "../../include/utils.h"
 
 int get_result(char str[])
 {
     char ch = '\0';
 
     ch = split_string(str);
+    
+    return (isupper(ch) ? (int) ch - 38 : (int) ch - 96);     
 
-    if (isupper(ch)) {
-        return (int) ch - 38;
-    } else if (islower(ch)) {
-        return (int) ch - 96;
-    } else {
-        return -1;
-    }
 }
 
 char split_string(char str[])
