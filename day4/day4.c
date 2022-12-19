@@ -61,7 +61,9 @@ int get_result4(int numbers[], array_compare compare) {
 
     result = (arr1->len > arr2->len) ? compare(arr1, arr2) : compare(arr2, arr1);
 
+    free(arr1->array);
     free(arr1);
+    free(arr2->array);
     free(arr2);
 
     return result;
