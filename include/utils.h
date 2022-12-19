@@ -11,6 +11,10 @@
 #define BUFFER_SIZE 50
 #define ARRAY_SIZE 3
 
+typedef struct ReturnArray {
+    int *array;
+    int len;
+} ReturnArray;
 
 void check_max(int temp_value, int calories[]);
 void file_parser(const char *filename);
