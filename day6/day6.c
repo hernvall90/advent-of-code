@@ -25,7 +25,7 @@ char *get_substr(const unsigned int size)
     return substr;
 }
 
-int get_result6(char str[BUFFER_SIZE], unsigned const int size)
+int get_result6(char str[BUFFER_SIZE], const unsigned int size)
 {
     char *substr = get_substr(size);
     int result = 0, count = size;
