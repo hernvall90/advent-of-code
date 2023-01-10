@@ -27,11 +27,11 @@ char split_string(char str[]);
 char find_character(char *s1, char *s2);
 
 /*DAY 6*/
-static const int size_1 = 4;
-static const int size_2 = 14;
+static const unsigned int size_1 = 4;
+static const unsigned int size_2 = 14;
 
-int get_result6(char str[BUFFER_SIZE], const int size);
-char *get_substr(const int size);
-int isUnique(char str[], const int size);
+int get_result6(char str[BUFFER_SIZE], const unsigned int size);
+char *get_substr(const unsigned int size);
+int isUnique(char str[], unsigned const int size);
 
 #endif

@@ -1,9 +1,9 @@
 #include "../include/utils.h"
 
-int isUnique(char str[], const int size)
+int isUnique(char str[], const unsigned int size)
 {
-    for (int i = 0; i < size - 1; i++) {
-        for (int j = i + 1; j < size; j++) {
+    for (unsigned int i = 0; i < size - 1; i++) {
+        for (unsigned int j = i + 1; j < size; j++) {
             if (str[i] == str[j]) {
                 return -1;
             }
@@ -13,9 +13,9 @@ int isUnique(char str[], const int size)
     return 1;
 }
 
-char *get_substr(const int size) 
+char *get_substr(const unsigned int size) 
 {
-    int i = 0;
+    unsigned int i = 0;
     char *substr = malloc((size + 1) * sizeof(char));
     
     for (i = 0; i < size; i++) {
@@ -25,7 +25,7 @@ char *get_substr(const int size)
     return substr;
 }
 
-int get_result6(char str[BUFFER_SIZE], const int size)
+int get_result6(char str[BUFFER_SIZE], unsigned const int size)
 {
     char *substr = get_substr(size);
     int result = 0, count = size;
