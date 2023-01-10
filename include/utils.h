@@ -8,7 +8,7 @@
 #include <time.h>
 #include <ctype.h>
 
-#define BUFFER_SIZE 50
+#define BUFFER_SIZE 5000
 #define ARRAY_SIZE 3
 
 typedef struct ReturnArray {
@@ -25,5 +25,13 @@ void remove_chars(char *s, char c);
 int get_result(char str[]);
 char split_string(char str[]);
 char find_character(char *s1, char *s2);
+
+/*DAY 6*/
+static const int size_1 = 4;
+static const int size_2 = 14;
+
+int get_result6(char str[BUFFER_SIZE], const int size);
+char *get_substr(const int size);
+int isUnique(char str[], const int size);
 
 #endif

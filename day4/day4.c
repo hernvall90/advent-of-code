@@ -83,6 +83,7 @@ int main(void)
         part1 += get_result4(numbers, isSubset);
         part2 += get_result4(numbers, isOverlap);
     }
+    fclose(fp);
 
     printf("Part 1, result=%d\n", part1);
     printf("Part 2, result=%d\n", part2);
