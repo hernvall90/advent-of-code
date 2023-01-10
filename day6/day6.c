@@ -27,7 +27,7 @@ char *get_substr(const int size)
 
 int get_result6(char str[BUFFER_SIZE], const int size)
 {
-    char *substr = malloc((size + 1) * sizeof(char));
+    char *substr = get_substr(size);
     int result = 0, count = size;
     size_t i = 0;
 
@@ -36,7 +36,7 @@ int get_result6(char str[BUFFER_SIZE], const int size)
         result = isUnique(substr, size);
 
         if (result == - 1) {
-            count ++;
+            count++;
         } else if (result == 1) {
             break;
         }
@@ -60,6 +60,8 @@ int main(void)
         part1 = get_result6(buffer, size_1);
         part2 = get_result6(buffer, size_2);
     }
+    fclose(fp);
+
     printf("part 1 = %d\n", part1);
     printf("part 2 = %d\n", part2);
 
