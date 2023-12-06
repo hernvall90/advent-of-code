@@ -1,3 +1,10 @@
+# advent-of-code-2023
+My solutions to AoC 2023 puzzles in `Python`.
+
+| Day | PT1 | PT2 |
+| --- | ---- | ---- |
+| [1](https://adventofcode.com/2023/day/1) | ⭐️ | ⭐️ |
+
 # advent-of-code-2022
 My solutions to AoC 2022 puzzles in `C`.
 
